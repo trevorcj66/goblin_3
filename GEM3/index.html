@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" onclick="jump()">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{ссылка}">
+    <meta property="og:title" content="название">
+    <meta property="og:description" content="текст">
+    <meta property="og:image" content="{картинка}">
+    <title>...</title>
+      <link rel="icon" href="favicon.ico">
+      <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+      <script src="./javascripts/jquery-3.7.1.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="javascripts/java-script.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+  <section class="sec1">
+    <div class="preload_screen">
+    <h3>Ты молодой гоблин и член объединения GEM. <br>
+      Хочешь продуктивно и много писать электронную <br>
+      музыку, однако на данный момент находишься <br>
+      на позиции стажёра и учишься в универеситете. <br>
+      Для успешного прохождения стажировки, ты <br>
+      должен успешно научиться пользоваться веб <br>
+      контроллером.</h3>
+  </div>
+  <div class="button1">
+    <h5>ПРОДОЛЖИТЬ →</h5>
+  </div>
+</section>
+
+
+<section class="sec2" style="display:none;">
+  <div class="load_stroke">
+    <div class="load_line">
+    </div>
+  </div>
+</section>
+
+<section class="sec3" style="display:none;">
+  <div class="buttons_box">
+    <div class="waves">
+      <img src="./img/gpblin_.gif">
+    </div>
+    <div class="slider1_box">
+      <div class="volume_stroke1">
+        <div class="volume_box1">
+          <div class="volume_line1"></div>
+        </div>
+      </div>
+      <div class="volume_button_1"></div>
+    </div>
+    <div class="slider2_box">
+      <div class="volume_stroke2">
+        <div class="volume_box2">
+          <div class="volume_line2"></div>
+        </div>        
+      </div>
+      <div class="volume_button_2"></div>
+    </div>
+
+    <div class="num_pad">
+      <div class="pad_row1">
+        <div class="kick">
+          <img src="./img/KICK.png" id="kick1" onclick="changeKick()">
+        </div>
+        <div class="snare">
+          <img src="./img/SNARE.png" id="snare1" onclick="changeSnare()">
+        </div>
+        <div class="clap">
+          <img src="./img/clap.png" id="clap1" onclick="changeClap()">
+        </div>
+      </div>
+
+      <div class="pad_row2">
+        <div class="hi-hat">
+          <img src="./img/HI-HAT.png" id="hi-hat1" onclick="changeHihat()">
+        </div>
+        <div class="perc">
+          <img src="./img/PERC.png" id="perc1" onclick="changePerc()">
+        </div>
+        <div class="fx">
+          <img src="./img/FX.png" id="fx1" onclick="changeFX()">
+        </div>
+      </div>
+
+      <div class="pad_row3">
+        <div class="bass">
+          <img src="./img/BASS.png" id="bass1" onclick="changeBass()">
+        </div>
+        <div class="synth">
+          <img src="./img/synth.png" id="synth1" onclick="changeSynth()">
+        </div>
+        <div class="tune">
+          <img src="./img/tune.png" id="tune1" onclick="changeTune()">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function changeKick(){
+      let kick=document.getElementById('kick1');
+
+      if(kick.src.match('./img/KICK.png')){
+        kick.src = './img/KICK_2.png'
+      } else {
+        kick.src = './img/KICK.png'
+    }
+  }
+
+  function changeSnare(){
+      let snare=document.getElementById('snare1');
+
+      if(snare.src.match('./img/snare.png')){
+        snare.src = './img/SNARE_2.png'
+      } else {
+        snare.src = './img/snare.png'
+    }
+  }
+
+  function changeClap(){
+      let clap=document.getElementById('clap1');
+
+      if(clap.src.match('./img/clap.png')){
+        clap.src = './img/clap_2.png'
+      } else {
+        clap.src = './img/clap.png'
+    }
+  }
+
+  function changeHihat(){
+      let hihat=document.getElementById('hi-hat1');
+
+      if(hihat.src.match('./img/HI-HAT.png')){
+        hihat.src = './img/HI-HAT_2.png'
+      } else {
+        hihat.src = './img/HI-HAT.png'
+    }
+  }
+
+  function changePerc(){
+      let perc=document.getElementById('perc1');
+
+      if(perc.src.match('./img/PERC.png')){
+        perc.src = './img/PERC_2.png'
+      } else {
+        perc.src = './img/PERC.png'
+    }
+  }
+
+  function changeFX(){
+      let fx=document.getElementById('fx1');
+
+      if(fx.src.match('./img/FX.png')){
+        fx.src = './img/FX_2.png'
+      } else {
+        fx.src = './img/FX.png'
+    }
+  }
+
+  function changeBass(){
+      let bass=document.getElementById('bass1');
+
+      if(bass.src.match('./img/BASS.png')){
+        bass.src = './img/BASS_2.png'
+      } else {
+        bass.src = './img/BASS.png'
+    }
+  }
+
+  function changeSynth(){
+      let synth=document.getElementById('synth1');
+
+      if(synth.src.match('./img/synth.png')){
+        synth.src = './img/synth_2.png'
+      } else {
+        synth.src = './img/synth.png'
+    }
+  }
+
+  function changeTune(){
+      let tune=document.getElementById('tune1');
+
+      if(tune.src.match('./img/tune.png')){
+        tune.src = './img/tune_2.png'
+      } else {
+        tune.src = './img/tune.png'
+    }
+  }
+  </script>
+
+</section>
+  </body>
+</html>

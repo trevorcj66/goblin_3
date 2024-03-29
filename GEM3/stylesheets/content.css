@@ -1,0 +1,276 @@
+*{ box-sizing: border-box;}
+html, body{ 
+    height: 100%;
+    background-color: #1B1B1B;
+}
+
+@font-face {
+font-family: "Rooftop-Bold";
+src: url("../fonts/Rooftop-Bold.ttf") format("truetype");
+font-style: bold;
+font-weight: bold;
+}
+
+@font-face {
+    font-family: "Rooftop-Light";
+    src: url("../fonts/Rooftop-Light.ttf") format("truetype");
+    font-style: light;
+    font-weight: light;
+    }
+
+p{ font-family: 'Rooftop-Light'; }
+
+h1, h2{
+    font-family: 'Rooftop-Bold';
+    color: #000000;
+}
+
+h3, h4 {
+    font-family: 'Rooftop-Light';
+    color: #07FF00;
+}
+
+h5{
+    font-family: 'Rooftop-Bold';
+}
+
+h1, h5{
+    font-size: 1.88vw;
+}
+
+h2, h3{
+    font-size: 1.25vw;
+}
+
+
+h4{
+    font-size: 1.04vw;
+}
+
+section{
+    width: 100%;
+}
+
+.sec1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: url("../img/button_nig.png"), auto;
+}
+
+.preload_screen{
+    display: block;
+    white-space: nowrap;
+    width: 34vw;
+    height: 10vw;
+    margin: 2%;
+    /* border: 0.73vw solid #07FF00; */
+}
+
+.button1{
+    display: block;
+    white-space: nowrap;
+    background-color: #07FF00;
+    color: black;
+    padding-top: 0.73vw;
+    padding-bottom: 0.73vw;
+    padding-left: 0.99vw;
+    padding-right: 0.99vw;
+    border: 0.3vw solid #07FF00;
+
+}
+
+.button1:hover{
+    background-color: #1B1B1B;
+    color: #07FF00;
+    border: 0.3vw solid #07FF00;
+
+}
+
+/*sec 2*/
+.sec2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.load_stroke{
+    display: flex;
+    align-items: center;
+    width: 28.13vw;
+    height: 1.77vw;
+    padding-left: 0.26vw;
+    padding-right: 0.26vw;
+    border: 0.21vw solid #07FF00;
+    box-sizing: content-box;
+}
+
+.load_line {
+    display: flex;
+    width: 1.88vw;
+    height: 1.25vw;
+    background-color: #07FF00;
+    animation: load_anim 2s infinite linear;
+}
+
+@keyframes load_anim{
+    0%, 100% {}
+    8% {width: 3.76vw}
+    16% {width: 5.64vw}
+    24% {width: 7.52vw}
+    32% {width: 9.4vw}
+    40% {width: 11.28vw}
+    48% {width: 13.16vw}
+    56% {width: 15.04vw}
+    64% {width: 16.92vw}
+    72% {width: 18.8vw}
+    80% {width: 20.68vw}
+    88% {width: 22.56vw}
+    100%{width: 27.6vw}
+}
+
+/*sec 3*/
+.sec3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.buttons_box{
+    display: flex;
+    width: 94.69vw;
+    height: 47.24vw;
+}
+
+.waves {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.04vw;
+    height: 47.24vw;
+    width: 30.94vw;
+    border: 0.42vw solid #07FF00;
+}
+
+.waves img{
+    width: 100%;
+    height: 100%
+}
+
+.slider1_box, .slider2_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.04vw;
+    height: 47.24vw;
+    width: 6.93vw;
+    background-color: #07FF00;
+}
+
+.volume_stroke1, .volume_stroke2 {
+    display: flex;
+    align-items: center;
+    width: 2.50vw;
+    height: 43.59vw;
+    border: 0.73vw solid #000;
+    box-sizing: content-box;
+}
+
+.volume_box1, .volume_box2 {
+    display: flex;
+    align-items: end;
+    width: 2.5vw;
+    height: 43.59vw;
+}
+
+.volume_line1, .volume_line2{
+    display: flex;
+    width: 2.50vw;
+    height: 22.71vw;
+    background-color: #000;
+    animation: blackline1 4s infinite ease-in;
+}
+
+.volume_button_1, .volume_button_2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 4.48vw;
+    height: 4.48vw;
+    background-color: #000;
+    animation: button2 4s infinite ease-in;
+}
+
+.num_pad {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 46.77vw;
+    width: 46.77vw;
+}
+
+.pad_row1, .pad_row2, .pad_row3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.kick, .snare, .clap, .hi-hat, .perc, .fx, .bass, .synth, .tune {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.04vw;
+    width: 13.75vw;
+    height: 13.75vw;
+    border: 0.73vw solid #07FF00;
+    color: #07FF00;
+    animation: pad_1 2s infinite alternate;
+}
+
+.snare, .hi-hat, .kick, .perc, .bass, .synth {
+    margin-right: 1.04vw;
+}
+
+.kick img, .snare img, .clap img, .hi-hat img, .perc img, .fx img, .bass img, .synth img, .tune img{
+    width: 100%;
+    height: 100%
+}
+
+@keyframes blackline1{
+    0%, 100% {
+    }
+    20% {
+        height: 20vw;
+    }
+    40% {
+        height: 40.99vw;
+    }
+    60% {
+        height: 25vw;
+    }
+    80% {
+        height: 40.99vw;
+    }
+}
+
+@keyframes button2{
+    0%, 100% {
+    }
+    20% {
+        transform: translateY(3vw);
+    }
+    40% {
+        transform: translateY(-20vw);
+    }
+    60% {
+        transform: translateY(-1vw);
+    }
+    80% {
+        transform: translateY(-20vw);
+    }
+}
